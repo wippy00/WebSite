@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'salamini',
+    loadChildren: () => import('./pages/salamini/salamini.module').then( m => m.SalaminiPageModule)
   },
+
 ];
 
 @NgModule({
